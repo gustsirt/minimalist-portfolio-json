@@ -1,7 +1,6 @@
 
 
 <div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
 <h2>
     <em>Résumé</em> minimalista maquetado para web y pdf
 </h2>
@@ -29,8 +28,6 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 ![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
 
 </div>
-
-<img src="portada.png"></img>
 
 ## 🛠️ Stack
 

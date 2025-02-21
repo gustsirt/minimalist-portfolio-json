@@ -10,6 +10,7 @@ import WorldMap from "@/icons/WorldMap.astro";
 
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
+// image optimize: https://squoosh.app/
 
 const SOCIAL_ICONS = {
   GitHub,
@@ -19,6 +20,7 @@ const SOCIAL_ICONS = {
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
 const linkedUrl = linkedInfo?.url;
 
+// para imprimir se cambio iconos por un texto
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 ---
 
@@ -28,11 +30,14 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
       <h1>{name}</h1>
       <h2>{label}</h2>
       <span>
-        <!-- <WorldMap /> -->
+        <WorldMap />
         {city}, {region}
       </span>
       <footer class="print">
-        {printInfo}
+        {
+          // se cambio iconos por un texto
+          printInfo
+        }
       </footer>
       <footer class="no-print">
         {
