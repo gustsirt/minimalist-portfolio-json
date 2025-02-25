@@ -1,5 +1,8 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import staticSite from "@astrojs/static"; // Adaptador correcto para sitios estáticos
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  output: "static",
+  adapter: staticSite(),
+  base: "/minimalist-portfolio-json/", // Repositorio en GitHub
+});
