@@ -1,8 +1,6 @@
 import { defineConfig } from "astro/config";
-import staticSite from "@astrojs/static"; // Adaptador correcto para sitios estáticos
 
 export default defineConfig({
-  output: "static",
-  adapter: staticSite(),
+  output: "static", // Indica que es un sitio estático
   base: "/minimalist-portfolio-json/", // Repositorio en GitHub
 });
